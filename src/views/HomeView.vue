@@ -1,5 +1,4 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
 import Header from '../views/Header.vue'
 import Aside from '../views/Aside.vue'
 </script>
@@ -14,7 +13,7 @@ import Aside from '../views/Aside.vue'
         <el-aside width="200px">
           <Aside></Aside>
         </el-aside>
-        <el-main>Main</el-main>
+        <el-main></el-main>
       </el-container>
     </el-container>
   </div>
