@@ -28,4 +28,4 @@
 .box-card {
   width: 480px;
 }
-</style>
+</style> 
