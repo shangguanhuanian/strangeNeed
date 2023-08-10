@@ -1,7 +1,13 @@
 <template>
   <div class="aside">
-    <el-menu active-text-color="#ffd04b" background-color="#545c64" class="el-menu-vertical-demo" default-active="2"
+    <el-menu active-text-color="#ffd04b" background-color="#545c64" class="el-menu-vertical-demo" default-active="1"
       text-color="#fff" @open="handleOpen" @close="handleClose">
+      <router-link to="/body">
+      <el-menu-item index="1">
+          <el-icon><IceCream /></el-icon>
+          <span>毫无亮点的首页</span>
+        </el-menu-item>
+      </router-link>
       <router-link to="/about">
         <el-menu-item index="2">
           <el-icon><IceCream /></el-icon>
@@ -14,14 +20,14 @@
         </el-icon>
         <span>Navigator Three</span>
       </el-menu-item>
-      <el-menu-item index="4">
+      <el-menu-item index="/about">
         <el-icon>
           <setting />
         </el-icon>
         <span>Navigator Four</span>
       </el-menu-item>
     </el-menu>
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 

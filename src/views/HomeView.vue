@@ -1,6 +1,7 @@
 <script setup>
 import Header from '../views/Header.vue'
 import Aside from '../views/Aside.vue'
+import Body from '../views/Body.vue'
 </script>
 
 <template>
@@ -13,7 +14,9 @@ import Aside from '../views/Aside.vue'
         <el-aside width="200px">
           <Aside></Aside>
         </el-aside>
-        <el-main></el-main>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
       </el-container>
     </el-container>
   </div>
