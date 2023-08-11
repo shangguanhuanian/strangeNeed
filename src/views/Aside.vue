@@ -8,26 +8,30 @@
           <span>毫无亮点的首页</span>
         </el-menu-item>
       </router-link>
-      <router-link to="/about">
+
+      <router-link to="/eat">
         <el-menu-item index="2">
           <el-icon><IceCream /></el-icon>
           <span>想吃啥？</span>
         </el-menu-item>
       </router-link>
+
+      <!-- <router-link to="/test3"> -->
       <el-menu-item index="3">
         <el-icon>
           <document />
         </el-icon>
         <span>Navigator Three</span>
       </el-menu-item>
-      <el-menu-item index="/about">
+    <!-- </router-link> -->
+
+      <el-menu-item index="4">
         <el-icon>
           <setting />
         </el-icon>
         <span>Navigator Four</span>
       </el-menu-item>
     </el-menu>
-    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -39,9 +43,7 @@ import {
   Setting,
   IceCream
 } from '@element-plus/icons-vue'
-const handleOpen = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath)
-}
+
 </script>
 
 <style>
